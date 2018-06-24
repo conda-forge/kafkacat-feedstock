@@ -17,13 +17,15 @@ build:
 
 requirements:
   build:
-    - toolchain   # [unix]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     # Compiling with latest 0.9.4 breaks backwards ABI compatibility.
-    - librdkafka 0.9.4
+    - librdkafka
     - yajl 2.1.*
 
   run:
-    - librdkafka >=0.9.4,<1.0.0
+    - librdkafka
     - yajl 2.1.*
 
 test:
