@@ -20,8 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    # Compiling with latest 0.9.4 breaks backwards ABI compatibility.
-    - librdkafka
+    - librdkafka 1.4.*
     - yajl 2.1.*
 
   run:
