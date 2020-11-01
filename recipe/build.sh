@@ -1,10 +1,10 @@
 #!/bin/bash
 set -ex
 
-export CFLAGS="${CFLAGS} -O3 -fPIC -I${BUILD_PREFIX}/include"
-export CXXFLAGS="${CXXFLAGS} -O3 -fPIC -I${BUILD_PREFIX}/include"
-export LDFLAGS="${LDFLAGS} -Wl,-rpath,${BUILD_PREFIX}/lib -L${BUILD_PREFIX}/lib"
-export CPPFLAGS="${CXXFLAGS}"
+export CFLAGS="${CFLAGS} -O3 -fPIC -I${PREFIX}/include"
+export CXXFLAGS="${CXXFLAGS} -O3 -fPIC -I${PREFIX}/include"
+export CPPFLAGS="${CPPFLAGS} -O3 -fPIC -I${PREFIX}/include"
+export LDFLAGS="${LDFLAGS} -Wl,-rpath,${PREFIX}/lib -L${PREFIX}/lib"
 
 # Configure
 ./configure --prefix=$PREFIX
