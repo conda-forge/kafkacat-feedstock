@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256hash }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -32,8 +32,6 @@ test:
   commands:
     - kafkacat -V
 
-    - conda inspect linkages {{ name }}  # [unix]
-    - conda inspect objects {{ name }}   # [osx]
 
 about:
   home: https://github.com/edenhill/kafkacat
