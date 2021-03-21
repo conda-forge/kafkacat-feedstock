@@ -3,7 +3,7 @@ About kafkacat
 
 Home: https://github.com/edenhill/kafkacat
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kafkacat-feedstock/blob/master/LICENSE.txt)
 
