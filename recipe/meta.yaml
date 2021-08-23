@@ -29,8 +29,7 @@ requirements:
 
 test:
   commands:
-    - kafkacat -V
-
+    - kcat -V
 
 about:
   home: https://github.com/edenhill/kafkacat
