@@ -1,5 +1,5 @@
 {% set name = "kafkacat" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 {% set sha256hash = "4c043cb86824a8f650d7dbe3aceaec8aa3fadafbd456d7e7444f18f184fe2347" %}
 
 package:
@@ -8,16 +8,17 @@ package:
 
 source:
   url: https://github.com/edenhill/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: baaed3cb6f5ade6a01355edb8819365e263a325375bee50727e009810e49cb38
+  sha256: a2daa5a14c43522153241a1d8a7ba3a51aa2a76f53a957907e18c79beec4a3a3
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make
   host:
     # Compiling with latest 0.9.4 breaks backwards ABI compatibility.
     - librdkafka
