@@ -3,5 +3,5 @@ __migrator:
   kind: version
   migration_number: 1
 librdkafka:
-- '1.9'
-migrator_ts: 1657159216.9600985
+- '2.2'
+migrator_ts: 1690232009.8788688
